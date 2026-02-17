@@ -1,307 +1,331 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Ignacio Gallego Rubio, Psicólogo",
+  logo: "/images/logo.png",
+  tagline: "Psicología cercana y práctica en Barcelona",
+  description: "Ignacio Gallego Rubio es psicólogo sanitario en Barcelona especializado en terapias de tercera generación (ACT, Mindfulness). Con 5 estrellas en Google (46 reseñas), ofrece terapia individual, infantil, para adolescentes y consulta online. Enfoque práctico y resolutivo adaptado a cada persona, trabajando ansiedad, depresión, duelo, adicciones y problemas relacionados con la alimentación desde el respeto, la autenticidad y la libertad individual.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#7C3AED",
+    secondary: "#1E293B",
+    accent: "#A78BFA",
+    neutral: "#FAF5FF"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "633 35 95 81",
+  whatsapp: "+34633359581",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros servicios de psicología.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Carrer del Consell de Cent, 363, Eixample, 08007 Barcelona, España",
+    city: "Barcelona",
+    province: "Madrid",
+    postalCode: "08007",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=6073678309443270143&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Ignacio%20Gallego%20Rubio%2C%20Psic%C3%B3logo%20%4041.3927%2C2.1677&z=16&output=embed",
+  coordinates: {
+    lat: 41.3927,
+    lng: 2.1677
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "10:00–13:00, 16:00–21:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 46,
+    url: "https://maps.google.com/?cid=6073678309443270143&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Jordi np",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "La experiencia con Ignacio ha sido verdaderamente, muy grata. Un gran profesional y ante todo una gran persona, con una muy buena capacidad de discernimiento, empatía, consejos muy personalizados, buen dinamismo... Quién tenga cualquier problema, sin duda , que contacte con él y verá buenos resultados. Gracias por tu buen trato y por tu gran ayuda que me has ofrecido. Un abrazo",
+        date: "Hace 5 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Marc Armengol",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Muy contento con la terapia que he hecho con Ignacio. Las sesiones han sido online y muy contento con ello tanto por la flexibilidad de la terapia como por la cercanía aún no estando en un despacho.\nMe ha ayudado a ser más yo mismo y estoy muy contento por ello. Es un largo camino que no termina aquí pero ya me he dado cuenta de que es lo que quiero. Muchas gracias",
+        date: "Hace 4 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Armand Company",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Super contento con la ayuda de Ignacio. He sentido desde el principio que me entendía y eso ya fue muy importante para mi. Después ha ido ayudándome a ver las cosas desde una perspectiva que me ha servido y mucho para cambiar lo que tenía que cambiar. Estoy muy agradecido",
+        date: "Hace 5 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Javi González",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Muy agradecido con la ayuda de Ignacio. Ha sido breve mi terapia con el pero me ha servido de mucho. Tiene una visión muy práctica y resolutiva. Tambien he de decir que a pesar de haber sido online, ha sido muy cercano el trato. Muy buena experiencia.",
+        date: "Hace 3 meses"
       },
-    ],
+      {
+        author: "Victor Manuel López Cobacho",
+        rating: 5,
+        text: "Ignacio es un profesional excelente: cercano, comprometido y muy humano. Su acompañamiento ha sido clave para salir adelante y reencontrarme conmigo mismo. No puedo estar más agradecido; lo recomiendo al 100%.",
+        date: "Hace 3 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "terapia-individual",
+      name: "Psicoterapia Individual",
+      description: "Sesiones personalizadas desde las terapias contextuales de tercera generación (ACT, terapia analítico funcional). Trabajo con ansiedad, depresión, duelo, adicciones y problemas relacionados con la alimentación. Cada intervención se adapta a tu situación personal porque cada persona es única y requiere un enfoque individualizado.",
+      benefits: [
+        "Enfoque práctico y resolutivo adaptado a ti",
+        "Terapia basada en respeto y autenticidad",
+        "Resultados reales desde las primeras sesiones"
+      ],
+      icon: "User"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "psicologia-infantil",
+      name: "Psicología Infantil y Adolescentes",
+      description: "Atención especializada para niños y adolescentes con dificultades emocionales, conductuales o de adaptación. Trabajo con un enfoque cercano y respetuoso, ayudando a los más jóvenes a desarrollar herramientas para gestionar sus emociones y relaciones.",
+      benefits: [
+        "Intervención adaptada a cada etapa evolutiva",
+        "Ambiente seguro y de confianza",
+        "Colaboración con familias en el proceso"
+      ],
+      icon: "Baby"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "terapia-online",
+      name: "Consulta Online",
+      description: "Sesiones de psicoterapia por videollamada con la misma calidad y cercanía que la consulta presencial. Flexibilidad total de horarios sin perder la conexión terapéutica. Ideal si vives fuera de Barcelona o prefieres la comodidad de tu hogar.",
+      benefits: [
+        "Máxima flexibilidad de horarios",
+        "Cercanía aún sin estar en el despacho",
+        "Misma efectividad que la terapia presencial"
+      ],
+      icon: "Monitor"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "mindfulness",
+      name: "Mindfulness y ACT",
+      description: "Entrenamiento en mindfulness y terapia de aceptación y compromiso (ACT) para aprender a relacionarte de forma diferente con tus pensamientos y emociones. Te ayudo a conectar con tus valores y vivir de manera más consciente y plena.",
+      benefits: [
+        "Reduce ansiedad y estrés de forma duradera",
+        "Conecta con lo que realmente importa",
+        "Herramientas prácticas para el día a día"
+      ],
+      icon: "Brain"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "ansiedad-depresion",
+      name: "Ansiedad y Depresión",
+      description: "Tratamiento especializado para trastornos de ansiedad, ataques de pánico, fobias y depresión. Utilizando terapias de tercera generación, te ayudo a recuperar tu bienestar emocional con estrategias prácticas y efectivas.",
+      benefits: [
+        "Comprensión profunda de tu situación",
+        "Técnicas validadas científicamente",
+        "Recupera tu calidad de vida"
+      ],
+      icon: "Heart"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "duelo",
+      name: "Duelo y Pérdidas",
+      description: "Acompañamiento en procesos de duelo complicado y pérdidas significativas. Te ayudo a transitar este camino difícil con comprensión y respeto, encontrando tu propio proceso de sanación.",
+      benefits: [
+        "Espacio seguro para expresar tu dolor",
+        "Acompañamiento respetuoso y empático",
+        "Recupera el sentido en tu vida"
+      ],
+      icon: "Heart"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "adicciones",
+      name: "Adicciones y Conductas Compulsivas",
+      description: "Tratamiento de adicciones y problemas relacionados con conductas compulsivas. Con experiencia en centros de atención a drogodependencias, ofrezco un enfoque comprensivo y sin juicios para ayudarte a recuperar el control de tu vida.",
+      benefits: [
+        "Experiencia en centros especializados",
+        "Enfoque libre de juicios morales",
+        "Plan individualizado de recuperación"
+      ],
+      icon: "Target"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "coaching",
+      name: "Coaching Personal",
+      description: "Acompañamiento para alcanzar tus objetivos personales y profesionales. Te ayudo a identificar lo que realmente quieres en tu vida y a dar los pasos necesarios para conseguirlo, conectando con tus valores más profundos.",
+      benefits: [
+        "Clarifica tus objetivos vitales",
+        "Conecta con tus valores auténticos",
+        "Plan de acción personalizado"
+      ],
+      icon: "Target"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
-      step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      step: "1",
+      title: "Contacto inicial",
+      description: "Llámame o escríbeme por WhatsApp al 633 35 95 81. Ofrezco una consulta telefónica informativa de 15 minutos gratuita donde podemos hablar de tu situación y resolver tus dudas sobre el proceso terapéutico."
     },
     {
-      step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      step: "2",
+      title: "Primera visita",
+      description: "En la primera sesión nos conocemos y exploramos tu situación actual. Te escucho con atención para entender qué te está pasando y qué te gustaría conseguir. Desde el primer momento sentirás comprensión y respeto absoluto."
     },
     {
-      step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      step: "3",
+      title: "Proceso terapéutico",
+      description: "Trabajamos juntos con sesiones regulares adaptadas a tu ritmo. Utilizo terapias de tercera generación (ACT, mindfulness) con un enfoque práctico y resolutivo. Cada sesión está personalizada porque cada persona es única."
     },
     {
-      step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      step: "4",
+      title: "Cambio y bienestar",
+      description: "Verás cambios reales en tu forma de relacionarte contigo mismo y con tu vida. Te ayudo a ser más tú mismo, a vivir según tus valores y a recuperar o construir la vida que realmente deseas vivir."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración Excelente de Pacientes",
+      description: "5 estrellas en Google con 46 reseñas reales. Mis pacientes destacan la comprensión desde el primer momento, el trato cercano y humano, y los resultados tangibles en su bienestar. Más de 113 opiniones positivas en plataformas de salud avalan mi trabajo.",
+      icon: "Award"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Enfoque Práctico y Resolutivo",
+      description: "Trabajo con terapias de tercera generación (ACT, mindfulness) validadas científicamente. Mis pacientes valoran especialmente la visión práctica y resolutiva, viendo cambios reales en su forma de relacionarse consigo mismos y con su vida desde las primeras sesiones.",
+      icon: "Target"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Cercanía También Online",
+      description: "Ofrezco terapia presencial en Barcelona y online con total flexibilidad. Mis pacientes de terapia online destacan la cercanía del trato aún sin estar en un despacho físico. La distancia no es barrera para una terapia efectiva y humana.",
+      icon: "Monitor"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Intervención Individualizada",
+      description: "Cada persona es única y requiere una intervención personalizada. Adapto mi trabajo a tu situación particular, respetando tu ritmo y tus valores. Mi compromiso es ayudarte a ser más tú mismo y a vivir según lo que realmente te importa.",
+      icon: "Heart"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Equipo de Ignacio Gallego Rubio, Psicólogo",
+      role: "Psicólogos Colegiados",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Psicólogos comprometidos con el bienestar emocional. En Ignacio Gallego Rubio, Psicólogo ofrecemos un espacio seguro donde trabajar hacia una vida más plena y satisfactoria."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Ignacio Gallego Rubio, Psicólogo - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Ignacio Gallego Rubio, Psicólogo - Imagen 2"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué enfoque terapéutico utiliza Ignacio Gallego?",
+      answer: "Trabajo principalmente desde las terapias contextuales o cognitivo-conductuales de tercera generación, específicamente terapia de aceptación y compromiso (ACT), terapia analítico funcional y mindfulness. Son enfoques validados científicamente con un componente muy práctico y resolutivo, adaptados siempre a cada persona de forma individualizada."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Ofrecéis terapia online?",
+      answer: "Sí, ofrezco sesiones de terapia online por videollamada con total flexibilidad horaria. Mis pacientes destacan la cercanía del trato incluso sin estar en el despacho físico. La terapia online tiene la misma efectividad que la presencial y te permite acceder desde cualquier lugar."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cuánto dura el proceso de terapia?",
+      answer: "La duración depende de cada persona y su situación particular. Algunos pacientes han tenido procesos breves pero muy efectivos, mientras otros necesitan más tiempo. Mi enfoque es práctico y resolutivo, buscando siempre la mayor eficacia. En la primera sesión podemos hablar sobre expectativas de duración según tu caso."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Atendéis a niños y adolescentes?",
+      answer: "Sí, ofrezco psicología infantil y psicoterapia para adolescentes. Trabajo con niños y jóvenes que tienen dificultades emocionales, conductuales o de adaptación, siempre con un enfoque respetuoso y adaptado a su edad. La colaboración con las familias es parte importante del proceso."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Qué problemas tratáis en la consulta?",
+      answer: "Trabajo con todo tipo de dificultades: trastornos de ansiedad, depresión, duelos complicados, problemas de adicción, dificultades relacionadas con la alimentación, estrés, fobias, baja autoestima, entre otros. Mi experiencia incluye trabajo en centros de atención a drogodependencias y diversos contextos clínicos."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Cómo solicito la primera cita?",
+      answer: "Puedes contactarme directamente por teléfono o WhatsApp al 633 35 95 81. Ofrezco una consulta telefónica informativa de 15 minutos donde podemos hablar de tu situación sin compromiso. También puedes enviarme un mensaje y te responderé lo antes posible para agendar tu primera visita."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Dónde está ubicada la consulta?",
+      answer: "Tengo consulta presencial en Barcelona (Esplugues de Llobregat). También ofrezco terapia online para personas que viven fuera de Barcelona o que prefieren la modalidad a distancia. La terapia online ofrece la misma calidad y cercanía que las sesiones presenciales."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué puedo esperar de la terapia con Ignacio Gallego?",
+      answer: "Mis pacientes destacan la comprensión desde el primer momento, la capacidad de ayudarles a ver las cosas desde una perspectiva diferente, y un trato cercano y humano. Mi intervención se basa en el respeto, la autenticidad y tu libertad individual. El objetivo es que puedas ser más tú mismo y vivir la vida que realmente deseas."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Ignacio Gallego Rubio, Psicólogo",
+    defaultTitle: "Ignacio Gallego Rubio - Psicólogo en Barcelona",
+    defaultDescription: "Psicólogo sanitario en Barcelona especializado en terapias de tercera generación (ACT, Mindfulness). Terapia individual, infantil y online. 5★ en Google. ☎ 633 35 95 81",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "psicólogo Barcelona",
+      "Ignacio Gallego Rubio",
+      "terapia ACT Barcelona",
+      "mindfulness Barcelona",
+      "psicólogo online",
+      "terapia de aceptación y compromiso",
+      "psicología infantil Barcelona",
+      "ansiedad Barcelona",
+      "depresión Barcelona",
+      "terapias tercera generación",
+      "psicólogo Esplugues de Llobregat",
+      "terapia individual Barcelona"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Ignacio Gallego Rubio, Psicólogo",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Carrer del Consell de Cent, 363, Eixample, 08007 Barcelona, España, Barcelona, Madrid"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Psicología",
+    "en Barcelona"
+  ],
+  heroDescription: "Psicólogo sanitario con enfoque en terapias contextuales de tercera generación. Trabajo desde el respeto, la autenticidad y la cercanía, tanto en consulta presencial en Barcelona como online. Mi objetivo es ayudarte a recuperar la vida que tenías o conseguir la vida que realmente te gustaría vivir.",
+  specialty: "Terapias de Tercera Generación",
+  ctaLabel: "Tu Bienestar",
+  ctaHeadline: "¿Listo para ser más tú mismo y vivir la vida que deseas?",
+  ctaDescription: "Contacta conmigo para iniciar tu proceso de terapia. Primera consulta informativa disponible. Atención presencial en Barcelona y online con total flexibilidad y cercanía.",
+  statsLabel: "Pacientes",
+  schemaType: "PsychologicalTreatment",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
